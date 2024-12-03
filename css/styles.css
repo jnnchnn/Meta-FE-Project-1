@@ -1,0 +1,54 @@
+/* for index.html in main folder 
+* {
+
+}
+*/
+
+body{
+    background-color: #EDEFEE;
+    font-family:'Courier New', Courier, monospace;
+    /* top and bottom | left and right */
+    margin: 3rem 5%;
+}
+
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem ;
+}
+
+/* centers the header logo image */
+header > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav li{
+    display: inline-block; 
+}
+
+
+section {
+    display: flex;
+}
+
+article {
+    flex: 1;
+}
+
+footer {
+    display: flex;
+}
+
+footer div {
+    flex: 1;
+}
