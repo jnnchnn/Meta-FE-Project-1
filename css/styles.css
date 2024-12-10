@@ -1,42 +1,77 @@
-/* for index.html in main folder 
+/* for index.html in main folder */
+
+/* UNIVERSAL SELECTOR */
 * {
-
+    background-color: #FFFFFF;
+    font-family: "Roboto Mono";
 }
-*/
-
-body{
-    background-color: #EDEFEE;
-    font-family:'Courier New', Courier, monospace;
-    /* top and bottom | left and right */
-    margin: 3rem 5%;
+body {
+     /* top and bottom | left and right */
+     margin: 2em 5%;
 }
 
-
+/* Overall Text setup for webpage*/
 h1 {
-    font-size: 3rem;
+    font-size: 2.5em;
+    text-align: center;
+    background-color: transparent;
+}
+h2 {
+    font-size: 1.5em ;
+}
+p {
+    font-size: 0.8em;
 }
 
-h2 {
-    font-size: 2rem ;
-}
 
 /* centers the header logo image */
-header > img {
+header a img {
     display: block;
+    max-width: 30%;
+    max-height: 30%;
     margin-left: auto;
     margin-right: auto;
 }
 
-nav ul {
+/* layout the NAV horizontally */
+nav {
+    display: flex;
+    flex-direction: row;
+}
+nav li{
+    display: inline-block; 
+    font-size: 1em;
+    justify-content: flex-start;
+}
+nav .navigate {
+    flex: 3;
+    justify-self: flex-start;
+    align-items: start;
     list-style: none;
     text-align: center;
 }
+nav .shopping {
+    flex: 1;
+    justify-self: flex-end;
+    align-items: end;
+}
+.shopping img {
+    max-width: 1.5em;
+    max-height: 1.5em;
+}
 
-nav li{
-    display: inline-block; 
+/* first main - large promotional banner */
+#cover {
+    background-image: url('resources/Luxe Packaging_Diagonal.jpg');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%; height: 100%;
+    vertical-align: middle;
+    color: #604d53;
 }
 
 
+/* For Main Contents Section */
 section {
     display: flex;
 }
@@ -45,10 +80,65 @@ article {
     flex: 1;
 }
 
+
+/* Gallery of Shop Range section */
+.shopRange {
+    flex-direction: column;
+}
+.shopRange-container {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 20px;
+    padding-bottom: 20%;
+}
+.range-item {
+    position: relative;
+    overflow: hidden;
+    width: 25em;
+    height: 25em;
+    justify-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    color: white;
+}
+.range-item img {
+    max-width: 100%;
+    max-height: 100%;
+    justify-self: stretch;
+    align-self: center;
+    transition: transform 0.3s ease;
+}
+.range-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effect for the Shop Range Gallery*/
+.range-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* For Footer */
 footer {
     display: flex;
 }
-
 footer div {
     flex: 1;
 }
+footer div img {
+    max-width: 55%;
+}
+

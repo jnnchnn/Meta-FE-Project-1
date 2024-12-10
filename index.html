@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset ="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Mangata and Gallo</title>
     <meta name="descripion" content="A brief description">
@@ -14,7 +14,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.magatagallo.com">
     <meta property="og:description" content="A brief description">
-    <meta property="og:image" content="Logo_Black.png">
+    <meta property="og:image" content="resources/Logo_Black.png">
 
     <!-- add icons here -->
     <!--
@@ -24,63 +24,102 @@
     -->
 
     <!-- Include your CSS files here -->
-     <link ref="stylesheet" href="CSS/styles.css">
-     
-    <!-- CSS link for google font-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-
+     <link rel="stylesheet" href="css/styles.css">
+    <!-- CSS link for google font Roboto Mono-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <!-- Add our website name or logo here-->
-        <img src="Logo_Black.png">
+        <!-- website name or logo -->
+        <a href="index.html"><img id="logo" src="resources/Logo_Black.png" alt=""></a>
     </header>
     <nav>
-        <!--Add your websitie navigation here-->
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="collections.html">Colletions</a></li>
-            <li><a href="editorials.html">Editorials</a></li>
-            <li><a href="book.html">Book</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+        <!-- websitie navigation here -->
+        <div class="navigate">
+            <ul >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="editorials.html">Editorials</a></li>
+                <li><a href="customs.html">Customs</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <div class="shopping">
+            <ul>
+                <li><a href="search.html"><img src="resources/search_24dp.png"></a></li>
+                <li><a href="account.html"><img src="resources/account_circle_24dp.png"></a></li>
+                <li><a href="cart.html"><img src="resources/shopping_bag_24dp.png"></a></li>
+            </ul>
+        </div>
     </nav>
+    <!-- Add your main content here-->
     <main>
-        <!-- Add your main content here-->
+        <!-- Main section, full width -->
          <section>
-            <article>
+            <article id="cover" style="background-image: url('resources/Luxe\ Packaging_Diagonal.jpg');">
                 <h1>heading 1</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </br>
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </article>
+        </section>
+        <!-- sub sections, in thirds -->
+        <section id="featuredContent">
             <article>
-                <h2>Heading 2</h2>
+                <h2>Editorials</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </p>
             </article>
             <article>
-                <h2>Heading 2</h2>
+                <h2>Customize</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </p>
             </article>
             <article>
-                <h2>Heading 2</h2>
+                <h2>Our Commitment</h2>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 </p>
             </article>
-         </section>
+        </section>
+        <section class="shopRange">
+            <div class="sectionHeader">
+                <h1 class="sectionHeader_Title">Discover the Range</h1>
+            </div>
+            <div class="shopRange-container">
+                <a href="rings.html" class="range-item">
+                    <img src="resources/Radiant Rings.jpg" alt="Radiant Rings">
+                    <div class="overlay">Radiant Rings</div>
+                </a>
+                <a href="necklaces.html" class="range-item">
+                    <img src="resources/Noteworthy Necklaces.jpg" alt="Noteworthy Necklaces">
+                    <div class="overlay">Noteworthy Necklaces</div>
+                </a>
+                <a href="earrings.html" class="range-item">
+                    <img src="resources/Ethereal Earrings.jpg" alt="Ethereal Earrings">
+                    <div class="overlay">Ethereal Earrings</div>
+                </a>
+                <a href="bracelets.html" class="range-item">
+                    <img src="resources/Beaming Bracelets.jpg" alt="Beaming Bracelets">
+                    <div class="overlay">Beaming Bracelets</div>
+                </a>
+            </div>
+        </section>
+        <section>
+            <h2>Sign up for Newsletter</h2>
+        </section>
     </main>
     <footer>
         <!--Add copyight notices and other footer content here-->
         <div>
-            <img src="Logo_Long Black.png">
+            <img src="resources/Logo_Long Black.png">
         </div>
         <div>
             <p>Copyright Magata and Gallo 2024</p>
